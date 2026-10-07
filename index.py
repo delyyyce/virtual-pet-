@@ -21,11 +21,14 @@ def kitty_eats():
 
 while game_running: 
     answer = input("What do you want Kitty to do?")
+    #if (answer == "Eat" or answer == "eat") and has_food:
+        #kitty_eats()
+    #else:
+         #print("Kitty has no food :(")
     if (answer == "Eat" or answer == "eat") and has_food:
         kitty_eats()
-    else:
-         print("Kitty has no food :(")
-
+    elif (answer == "Eat" or answer == "eat") and not has_food:
+        print("Kitty has no food.")
 
 
 
