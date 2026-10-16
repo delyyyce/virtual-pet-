@@ -55,16 +55,20 @@ def kitty_sleeps():
 
 while game_running: 
     answer = input("What do you want Kitty to do?")
+    answer = answer.lower()
     #if (answer == "Eat" or answer == "eat") and has_food:
         #kitty_eats()
     #else:
          #print("Kitty has no food :(")
-    if (answer == "Eat" or answer == "eat") and has_food:
+    if (answer == "eat") and has_food:
         kitty_eats()
-    elif (answer == "Eat" or answer == "eat") and not has_food:
+    elif (answer == "eat") and not has_food:
         print("Kitty has no food.")
     elif (answer == "sleep"):
         kitty_sleeps()
+    elif (answer == "quit"):
+        print("Goodbye!")
+        game_running = False
 
 
 
